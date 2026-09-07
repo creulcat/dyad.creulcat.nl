@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dyad Launcher — run more than one instance at once</title>
+<meta name="description" content="Dyad Launcher is a streamlined fork of the Modrinth app, built for running more than one instance at once. Windows, Linux, macOS.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <a href="#top" class="brand">
+      <img src="assets/img/mark.svg" alt="" class="brand__mark" width="28" height="28">
+      <span>Dyad Launcher</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#downloads">Downloads</a>
+    </nav>
+    <div class="topbar__actions">
+      <a href="https://github.com/creulcat/DyadLauncher" class="icon-link" aria-label="View source on GitHub">
+        <img src="assets/img/github.svg" alt="" width="20" height="20">
+      </a>
+      <a href="https://discord.creulcat.nl" class="icon-link" aria-label="Join the Discord server">
+        <img src="assets/img/discord.svg" alt="" width="20" height="20">
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="wrap hero__inner">
+      <p class="pill">
+        <span class="pill__dot" aria-hidden="true"></span>
+        Beta - Improving on Quality of Life and social presence
+      </p>
+      <h1 class="hero__title">
+        Run more than <span class="grad">one instance</span> at once.
+      </h1>
+      <p class="hero__gloss">Dyad <span class="ipa">/ˈdaɪ.æd/</span> - a pair; two as one.</p>
+      <p class="hero__subtitle">
+        Dyad Launcher is a streamlined fork of the Modrinth app, built for running
+        more than one instance at once. Same launcher you know, less clutter,
+        more concurrent play.
+      </p>
+      <div class="hero__ctas">
+        <a href="https://github.com/creulcat/DyadLauncher/releases" class="btn btn--primary" id="primary-download">Get Dyad Launcher</a>
+        <a href="#downloads" class="btn btn--ghost">Other versions</a>
+        <a href="https://github.com/creulcat/DyadLauncher" class="btn btn--ghost">View on GitHub</a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="wrap">
+      <h2 class="section__title">What's different</h2>
+      <p class="section__lede">Same Modrinth/Theseus foundation underneath. Refocused on running more than one game at a time.</p>
+
+      <div class="grid grid--features">
+        <article class="card reveal">
+          <h3>Familiar foundation</h3>
+          <p>Built on the same Modrinth/Theseus core you already know. Just refocused, not reinvented.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Multi-instance launches</h3>
+          <p>Launch multiple instances at once, under the same or different Microsoft accounts.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Die, ads</h3>
+          <p>Removing the clutter and the advertisements. Pure function.</p>
+        </article>
+
+        <article class="card reveal card--wip">
+          <span class="tag">In progress</span>
+          <h3>Shared resources</h3>
+          <p>Symlink-based sharing of mods, packs, configs, and worlds across instances are pending.</p>
+        </article>
+
+        <article class="card reveal card--wip">
+          <span class="tag">In progress</span>
+          <h3>Keeping the good parts</h3>
+          <p>Discord Rich Presence is pending. Telemetry, account promos, and the news feed are stripped out.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="downloads">
+    <div class="wrap">
+      <h2 class="section__title">Downloads</h2>
+      <p class="section__lede">No builds published yet. watch the GitHub Releases page. This section is ready to go live the moment they land.</p>
+
+      <div class="grid grid--downloads" id="download-grid">
+        <article class="dl-card" data-os="windows" data-download-url="">
+          <div class="dl-card__head">
+            <img src="assets/img/windows.svg" alt="" width="26" height="26">
+            <h3>Windows</h3>
+            <span class="you-tag" hidden>That's you</span>
+          </div>
+          <p>Primary target platform per the upstream project.</p>
+          <div class="dl-card__actions">
+            <button class="btn btn--disabled" disabled>No build yet</button>
+            <a href="https://github.com/creulcat/DyadLauncher/releases" class="link-arrow">Check Releases →</a>
+          </div>
+        </article>
+
+        <article class="dl-card" data-os="macos" data-download-url="">
+          <div class="dl-card__head">
+            <img src="assets/img/apple.svg" alt="" width="26" height="26">
+            <h3>macOS</h3>
+            <span class="you-tag" hidden>That's you</span>
+          </div>
+          <p>Universal build planned alongside Windows and Linux.</p>
+          <div class="dl-card__actions">
+            <button class="btn btn--disabled" disabled>No build yet</button>
+            <a href="https://github.com/creulcat/DyadLauncher/releases" class="link-arrow">Check Releases →</a>
+          </div>
+        </article>
+
+        <article class="dl-card" data-os="linux" data-download-url="">
+          <div class="dl-card__head">
+            <img src="assets/img/linux.svg" alt="" width="26" height="26">
+            <h3>Linux</h3>
+            <span class="you-tag" hidden>That's you</span>
+          </div>
+          <p>AppImage / distro package, exact format TBD.</p>
+          <div class="dl-card__actions">
+            <button class="btn btn--disabled" disabled>No build yet</button>
+            <a href="https://github.com/creulcat/DyadLauncher/releases" class="link-arrow">Check Releases →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <a href="#top" class="brand brand--footer">
+      <img src="assets/img/mark-glyph.svg" alt="" width="22" height="22">
+      <span>Dyad Launcher</span>
+    </a>
+    <nav class="footer__links" aria-label="Footer">
+      <a href="https://github.com/creulcat/DyadLauncher">GitHub</a>
+      <a href="https://discord.creulcat.nl">Discord</a>
+      <a href="https://creulcat.nl/">creulcat.nl</a>
+    </nav>
+    <p class="footer__meta">No analytics. No tracking. &copy; <span id="year"></span> creulcat</p>
+  </div>
+  <div class="wrap footer__disclaimer">
+    <p>Dyad Launcher is an independent project and is not affiliated with, endorsed by, or sponsored by Modrinth, or by Mojang/Minecraft.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
