@@ -338,6 +338,10 @@ a { color: inherit; }
   box-shadow: var(--shadow-1);
   transition: transform var(--dur-normal) var(--ease), border-color var(--dur-normal), box-shadow var(--dur-normal);
 }
+.dl-card {
+  display: flex;
+  flex-direction: column;
+}
 .card:hover, .dl-card:hover {
   transform: translateY(-4px);
   border-color: var(--border-strong);
@@ -380,11 +384,23 @@ a { color: inherit; }
 }
 .dl-card__head h3 { margin: 0; font-size: var(--fs-lg); }
 .dl-card p { color: var(--text-muted); margin: 0 0 var(--space-sm); }
+.dl-card__formats {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs) var(--space-md);
+  flex-wrap: wrap;
+  margin: 0 0 var(--space-sm);
+}
+.dl-card__formats:empty {
+  display: none;
+}
 .dl-card__actions {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
   flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: var(--space-xs);
 }
 .you-tag {
   margin-left: auto;

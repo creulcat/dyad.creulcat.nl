@@ -12,12 +12,14 @@ const ASSET_MATCHERS = {
     { label: 'Windows (x64 installer)', test: /\.exe$/i },
   ],
   macos: [
+    { label: 'macOS (.dmg, Universal)', test: /universal.*\.dmg$/i },
     { label: 'Apple Silicon (.dmg)', test: /aarch64.*\.dmg$/i },
     { label: 'Intel (.dmg)', test: /(x64|x86_64).*\.dmg$/i },
   ],
   linux: [
     { label: 'AppImage', test: /\.appimage$/i },
     { label: '.deb package', test: /\.deb$/i },
+    { label: '.rpm package', test: /\.rpm$/i },
   ],
 };
 
@@ -95,12 +97,13 @@ async function loadLatestRelease() {
       oldButton.replaceWith(button);
     }
 
+    const formats = card.querySelector('.dl-card__formats');
     extraMatches.forEach(({ label, asset }) => {
       const link = document.createElement('a');
       link.className = 'link-arrow';
       link.href = asset.browser_download_url;
       link.textContent = label;
-      actions.insertBefore(link, actions.lastElementChild);
+      formats.appendChild(link);
     });
   });
 
